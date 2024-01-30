@@ -30,9 +30,9 @@ body {
   }
   
   nav{
-     diplay: flex;
+     display: flex;
      width: 25%;
-      margin: 10;
+      margin: 10px;
       background-color: #e1dddd;
       padding: 20px;
       border: 30px solid #808080; 
