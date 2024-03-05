@@ -1,40 +1,49 @@
 body {
-    background-color: #fff4e9;
-    font-family: 'Ink Free';
+  background-color: #fff4e9;
+  font-family: 'Ink Free';
+  color: #9AAB89;
+  
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: #e1dddd;
+  text-align: center;
+  width: 100%
+}
+.sub-title {
+  border:thick double;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  background-color: #e1dddd;
+  width: 50%;
+}
+
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+  width: 50%
+ }
+
+nav{
+   diplay: flex;
+   width: 25%;
+    margin: 10;
+    background-color: #e1dddd;
+    padding: 20px;
+    border: 30px solid #808080; 
     color: #9AAB89;
-    
-  }
-  h1 {
-    display: flex;
-    justify-content: center;
-    background-color: #e1dddd;
-    text-align: center;
-    width: 35%
-  }
-  .sub-title {
-    border:thick double;
-  }
+}
+
+form id="emailForm"{
+ display: flex;
+ justify-content: center;
+ background-color: #e1dddd;
+ width: 45%; 
   
-  h2 {
-    display: flex;
-    justify-content: center;
-    background-color: #e1dddd;
-    width: 25%;
-  }
-  
-  p {
-    border-top-style: dotted;
-    border-right-style: solid;
-    border-bottom-style: dotted;
-    border-left-style: solid;
-  }
-  
-  nav{
-     display: flex;
-     width: 25%;
-      margin: 10px;
-      background-color: #e1dddd;
-      padding: 20px;
-      border: 30px solid #808080; 
-      color: #9AAB89;
-  }
+}
