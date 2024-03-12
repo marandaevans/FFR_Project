@@ -1,6 +1,5 @@
-<script>
-        const emailForm = document.getElementById('emailForm');
-        const errorText = document.getElementById('errorText');
+const emailForm = document.getElementById('emailForm');
+const errorText = document.getElementById('errorText');
 
         emailForm.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the form from submitting

@@ -31,7 +31,7 @@ p {
  }
 
 nav{
-   diplay: flex;
+   display: flex;
    width: 25%;
     margin: 10;
     background-color: #e1dddd;
@@ -53,3 +53,11 @@ canvas {
   background-color: #e1dddd;
   width: 45%;
  }
+
+ image{
+  display: flex;
+  justify-content: center;
+  background-color: #e1dddd;
+  width:20%;
+
+ } 
