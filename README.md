@@ -1,5 +1,5 @@
 # FFR_Project
-This projecct is not complete and I will still be working on the details as well as the pages linked to the index.html beyond this course.
+This website is not complete and I will still be working on the details as well as the pages linked to the index.html beyond this course.
 
 Foster care is not something I thought I would be interested in... at all. I am not a "kid person" and the thought of returning a child to a potentially unsafe home boggles my mind. That was before my cousin and his girlfriend needed someone to care for their 9-month old son. My sister jumped at the chance and, almost a year later, he is still doing a kinship foster of that precious boy. Seeing my sister, a medical social worker, struggle to find out what to do and how, prompted me to choose foster family resurces as my capstone projet subject. 
 
