@@ -23,5 +23,31 @@
             // Regular expression to validate email format
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
-        }
-    </script>
+        };
+    
+    const xValues = ["Kinship", "Non-related Kin", "Traditional", "Sepcialized", "Emergency", "Respite"];
+const yValues = [5, 49, 44, 24, 15, 20];
+const barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Types of Foster Care in the United States"
+    }
+  }
+});

@@ -47,3 +47,9 @@ form id="emailForm"{
  width: 45%; 
   
 }
+
+canvas {
+  justify-content: right;
+  background-color: #e1dddd;
+  width: 45%;
+ }
