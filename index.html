@@ -5,43 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
-<img src="images\logo.png" alt="Foster Family Reoures Logo">
-    <h1>Foster Family Resources</h1>
-    <p class="sub-title">
-      <strong>  Welcome to the Foster Family Resources page! </strong><br><br>Foster parenting can be incredibly fulfilling... and incredibly frustrating. The resources you need to lessen frustration and add to the enrichment of the fostering process can be found here! 
-    </p>
- 
-    <h2>Fostering Classes</h2>
-    <p>Depending on the child services procedures, foster parenting classes may be required to take classes and receive a certification as a foster parent. Click the following link to find a class to help you accomplish your certification requirements <a href="faqs.html"> Foster Certification Classes.</a> </p>
+    <header>
+        <img src="images/logo.png" alt="Foster Family Resources Logo">
+        <h1>Foster Family Resources</h1>
+        <p class="sub-title">
+            <strong>Welcome to the Foster Family Resources page! </strong><br><br>Foster parenting can be incredibly fulfilling... and incredibly frustrating. The resources you need to lessen frustration and add to the enrichment of the fostering process can be found here!
+        </p>
+    </header>
     
-    <h2>Support Services</h2>
-      <p> This is hard work! It is mentally, physically, emotionally and financially exhausting. Many states and communities have resources specifically allocated for supporting foster families. Click <a href="/">Foster Family Resource Search</a> to find what resources are available in your area to provide some relief.</p>   
-    <h2>FAQs</h2>
-     <p> A comprehensive list of the questions that have most frequently been asked by others before you. Click the <a href="/">Foster Family FAQs</a> to see if your question has already been asked and answered. </p>
-    
-     <canvas id="myChart" style="width:50%;max-width:300px"></canvas>
-     <nav>
-      <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="classes.html">Foster Classes</a></li>
-          <li><a href="types.html">Types of Fostering and Support Services</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-      </ul>
-  </nav>
-     <form id="emailForm">
-          <label for="email">Sign up for website updates:</label>
-          <input type="email" id="email" name="email" required>
-          <button type="submit">Submit</button>
-          <p id="errorText" style="color: grey;"></p> <!-- Error message display area -->
-      </form>
+    <main>
+        <h2>Fostering Classes</h2>
+        <p>Depending on the child services procedures, foster parenting classes may be required to take classes and receive a certification as a foster parent. Click the following link to find a class to help you accomplish your certification requirements <a href="faqs.html"> Foster Certification Classes.</a> </p>
+        
+        <h2>Support Services</h2>
+        <p>This is hard work! It is mentally, physically, emotionally and financially exhausting. Many states and communities have resources specifically allocated for supporting foster families. Click <a href="/">Foster Family Resource Search</a> to find what resources are available in your area to provide some relief.</p>
+        
+        <h2>FAQs</h2>
+        <p>A comprehensive list of the questions that have most frequently been asked by others before you. Click the <a href="/">Foster Family FAQs</a> to see if your question has already been asked and answered.</p>
+        
+        <canvas id="myChart" style="width:70%;max-width:600px"></canvas>
+        
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="classes.html">Foster Classes</a></li>
+                <li><a href="types.html">Types of Fostering and Support Services</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+        
+        <form id="emailForm">
+            <label for="email">Sign up for website updates:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+            <p id="errorText" style="color: grey;"></p> 
+        </form>
+    </main>
   
-     </main>
-  
-  <footer>
-    <img src="images\banner.jpg" alt="Family making heart with hands" width="500" 
-    height="300" />
-  </footer>  
-  </body>
-  </html>
+    <footer>
+        <img src="images/banner.jpg" alt="Family making heart with hands" width="500" height="500" />
+        <script>
+            const xValues = ["Kinship", "Non-related Kin", "Traditional", "Specialized", "Emergency", "Respite"];
+            const yValues = [32, 15, 40, 10, 1, 2];
+            const barColors = [
+              "#b91d47",
+              "#00aba9",
+              "#2b5797",
+              "#e8c3b9",
+              "#1e7145"
+            ];
+
+            new Chart("myChart", {
+              type: "pie",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                title: {
+                  display: true,
+                  text: "Types of Foster Care in the United States"
+                }
+              }
+            });
+        </script>
+        <script src="util.js"></script>
+    </footer>  
+</body>
+</html>

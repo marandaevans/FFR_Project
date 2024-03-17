@@ -24,8 +24,8 @@ const errorText = document.getElementById('errorText');
             return emailRegex.test(email);
         };
     
-    const xValues = ["Kinship", "Non-related Kin", "Traditional", "Sepcialized", "Emergency", "Respite"];
-const yValues = [5, 49, 44, 24, 15, 20];
+const xValues = ["Kinship", "Non-related Kin", "Traditional", "Specialized", "Emergency", "Respite"];
+const yValues = [32, 15, 40, 10, 1, 2];
 const barColors = [
   "#b91d47",
   "#00aba9",

@@ -30,7 +30,7 @@ p {
   width: 50%
  }
 
-nav{
+nav {
    display: flex;
    width: 25%;
     margin: 10;
@@ -40,21 +40,22 @@ nav{
     color: #9AAB89;
 }
 
-form id="emailForm"{
- display: flex;
- justify-content: center;
- background-color: #e1dddd;
- width: 45%; 
-  
+#emailForm {
+  display: flex;
+  justify-content: center;
+  background-color: #e1dddd;
+  width: 45%; 
 }
 
 canvas {
   justify-content: right;
   background-color: #e1dddd;
   width: 45%;
+  padding: 20px;
+  display: flex;
  }
 
- image{
+ image {
   display: flex;
   justify-content: center;
   background-color: #e1dddd;
