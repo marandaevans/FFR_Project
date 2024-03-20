@@ -1,64 +1,50 @@
 body {
   background-color: #fff4e9;
-  font-family: 'Ink Free';
+  font-family: 'Ink Free', sans-serif;
   color: #9AAB89;
-  
+  display: flex; 
+  flex-wrap: wrap; 
 }
+
+h1, h2, .sub-title, p, nav, #emailForm, canvas {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
 h1 {
-  display: flex;
-  justify-content: center;
   background-color: #e1dddd;
   text-align: center;
-  width: 100%
 }
+
 .sub-title {
-  border:thick double;
+  border: thick double;
 }
 
 h2 {
-  display: flex;
-  justify-content: center;
-  background-color: #e1dddd;
   width: 50%;
+  background-color: #e1dddd;
 }
 
 p {
-  border-top-style: dotted;
-  border-right-style: solid;
-  border-bottom-style: dotted;
-  border-left-style: solid;
-  width: 50%
- }
+  border: 2px solid;
+}
 
 nav {
-   display: flex;
-   width: 25%;
-    margin: 10;
-    background-color: #e1dddd;
-    padding: 20px;
-    border: 30px solid #808080; 
-    color: #9AAB89;
+  width: 25%;
+  border: 30px solid #808080;
 }
 
 #emailForm {
-  display: flex;
-  justify-content: center;
-  background-color: #e1dddd;
-  width: 45%; 
+  width: 45%;
 }
 
 canvas {
-  justify-content: right;
-  background-color: #e1dddd;
   width: 45%;
-  padding: 20px;
-  display: flex;
- }
+}
 
- image {
-  display: flex;
-  justify-content: center;
-  background-color: #e1dddd;
-  width:20%;
-
- } 
+img {
+  max-width: 30%;
+  height: 45%;
+}
