@@ -22,7 +22,7 @@ const errorText = document.getElementById('errorText');
             // Regular expression to validate email format
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
-        };
+        }
     
 const xValues = ["Kinship", "Non-related Kin", "Traditional", "Specialized", "Emergency", "Respite"];
 const yValues = [32, 15, 40, 10, 1, 2];

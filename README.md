@@ -6,5 +6,5 @@ Foster care is not something I thought I would be interested in... at all. I am 
 The features I chose for this website are as follows:
 1. Use a regular expression to validate user input and either prevent the invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).
 2. Visualize data in a user friendly way. (e.g. graph, chart, etc)
-3. Retrieve data from a third-party API and use it to display something within your app.
+3. Retrieve data from a third-party API and use it to display something within your app. This feature appears in the console.
 
