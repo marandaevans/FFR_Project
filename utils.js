@@ -50,3 +50,25 @@ new Chart("myChart", {
     }
   }
 });
+
+const url = 'https://quotes15.p.rapidapi.com/quotes/random/';
+        const options = {
+          method: 'GET',
+          headers: {
+            'X-RapidAPI-Key': '514a7b4392mshd14404b5d0b3bd9p102592jsne1fab4112f0b',
+            'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+          }
+        };
+
+        async function fetchQuote() {
+          try {
+            const response = await fetch(url, options);
+            const result = await response.text();
+            console.log(result);
+          } catch (error) {
+            console.error(error);
+          }
+        }
+
+        fetchQuote();
+

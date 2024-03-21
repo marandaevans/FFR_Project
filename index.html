@@ -4,17 +4,41 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FFR Webpage</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
     <header>
         <img src="images/logo.png" alt="Foster Family Resources Logo">
-        <h1>Foster Family Resources</h1>
-        <p class="sub-title">
-            <strong>Welcome to the Foster Family Resources page! </strong><br><br>Foster parenting can be incredibly fulfilling... and incredibly frustrating. The resources you need to lessen frustration and add to the enrichment of the fostering process can be found here!
-        </p>
+        <h3>Fetch Quote</h3>
     </header>
+    <script>
+        const url = 'https://quotes15.p.rapidapi.com/quotes/random/';
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '514a7b4392mshd14404b5d0b3bd9p102592jsne1fab4112f0b',
+                'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+            }
+        };
+
+        async function fetchQuote() {
+            try {
+                const response = await fetch(url, options);
+                const result = await response.text();
+                console.log(result);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        fetchQuote();
+    </script>
+
+    <h1>Foster Family Resources</h1>
+    <p class="sub-title">
+        <strong>Welcome to the Foster Family Resources page! </strong><br><br>Foster parenting can be incredibly fulfilling... and incredibly frustrating. The resources you need to lessen frustration and add to the enrichment of the fostering process can be found here!
+    </p>
     
     <main>
         <h2>Fostering Classes</h2>
@@ -47,35 +71,36 @@
   
     <footer>
         <img src="images/banner.jpg" alt="Family making heart with hands"/>
-        <script>
-            const xValues = ["Kinship", "Non-related Kin", "Traditional", "Specialized", "Emergency", "Respite"];
-            const yValues = [32, 15, 40, 10, 1, 2];
-            const barColors = [
-              "#b91d47",
-              "#00aba9",
-              "#2b5797",
-              "#e8c3b9",
-              "#1e7145"
-            ];
+    </footer>  
 
-            new Chart("myChart", {
-              type: "pie",
-              data: {
+    <script src="util.js"></script>
+    <script>
+        const xValues = ["Kinship", "Non-related Kin", "Traditional", "Specialized", "Emergency", "Respite"];
+        const yValues = [32, 15, 40, 10, 1, 2];
+        const barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797",
+          "#e8c3b9",
+          "#1e7145"
+        ];
+
+        new Chart("myChart", {
+            type: "pie",
+            data: {
                 labels: xValues,
                 datasets: [{
-                  backgroundColor: barColors,
-                  data: yValues
+                    backgroundColor: barColors,
+                    data: yValues
                 }]
-              },
-              options: {
+            },
+            options: {
                 title: {
-                  display: true,
-                  text: "Types of Foster Care in the United States"
+                    display: true,
+                    text: "Types of Foster Care in the United States"
                 }
-              }
-            });
-        </script>
-        <script src="util.js"></script>
-    </footer>  
+            }
+        });
+    </script>
 </body>
 </html>
