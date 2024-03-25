@@ -8,3 +8,4 @@ The features I chose for this website are as follows:
 2. Visualize data in a user friendly way. (e.g. graph, chart, etc). A pie chart shwing the amount of children in the different divisons of foster care in the United States.
 3. Retrieve data from a third-party API and use it to display something within your app. This feature appears at the top  the page under the logo and in the console.
 
+Media Query changes the background to white for viewing on mobile devices. Used Mobile View on VS Code (iPhone 8) with the following as the URL server http://127.0.0.1:5500/ to test.

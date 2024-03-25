@@ -1,4 +1,4 @@
-body {
+  body {
   background-color: #fff4e9;
   font-family: 'Ink Free', sans-serif;
   color: #9AAB89;
@@ -6,51 +6,58 @@ body {
   flex-wrap: wrap;
 }
 
-h1, h2, .sub-title, p, nav, #emailForm, canvas {
-  margin: 0 auto;
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
+@media screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
 }
 
-h1 {
-  background-color: #e1dddd;
-  text-align: center;
-}
-
-.sub-title {
-  border: thick double;
-}
-
-h2 {
-  width: 50%;
-  background-color: #e1dddd;
-}
-
-h3 {
-  display: flex;
-  width: 50%;
-  justify-content: right;
+  h1, h2, .sub-title, p, nav, #emailForm, canvas {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-p {
-  border: 2px solid;
-}
+  h1 {
+    background-color: #e1dddd;
+    text-align: center;
+  }
 
-nav {
-  width: 25%;
-  border: 30px solid #808080;
-}
+  .sub-title {
+    border: thick double;
+  }
 
-#emailForm {
-  width: 45%;
-}
+  h2 {
+    width: 50%;
+    background-color: #e1dddd;
+  }
 
-canvas {
-  width: 45%;
-}
+  h3 {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+  }
 
-img {
-  max-width: 200px;
-  height: auto;
-}
+  p {
+    border: 2px solid;
+  }
+
+  nav {
+    width: 25%;
+    border: 30px solid #808080;
+  }
+
+  #emailForm {
+    width: 45%;
+  }
+
+  canvas {
+    width: 45%;
+  }
+
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+
